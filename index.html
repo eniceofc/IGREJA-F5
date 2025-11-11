@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGREJA F5 - Ação, Reação, Doação</title>
+    <meta name="description" content="IGREJA F5 - Uma igreja focada em ação social, acolhimento e transformação de vidas através do amor e serviço">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Configuração customizada do Tailwind
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FFD700",
+                        secondary: "#1A1A1A"
+                    },
+                    fontFamily: {
+                        'montserrat': ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* CSS customizado */
+        html {
+            scroll-behavior: smooth;
+        }
+        .hero-bg {
+            /* Imagem de placeholder. Troque pela URL de uma imagem real */
+            background: linear-gradient(rgba(26, 26, 26, 0.7), rgba(26, 26, 26, 0.7)), url('https://images.unsplash.com/photo-1518358256563-d6fdaa6a8a3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200');
+            background-size: cover;
+            background-position: center;
+        }
+        /* Imagens de placeholder para as ações. Troque pelas URLs das imagens reais */
+        .acao-roupas-bg {
+            background-image: url('https://images.unsplash.com/photo-1593113598332-cd288c649414?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600');
+            background-size: cover;
+            background-position: center;
+            min-height: 400px;
+        }
+        .acao-cestas-bg {
+            background-image: url('https://images.unsplash.com/photo-1591195864112-73c4600b64d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600');
+            background-size: cover;
+            background-position: center;
+            min-height: 400px;
+        }
+    </style>
+</head>
+<body class="font-montserrat bg-white text-secondary">
+    <header class="bg-secondary shadow-lg fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex justify-between items-center">
+                <a href="#inicio" title="Início - IGREJA F5">
+                    <img src="assets/F5_LOGO.png" alt="Logo Igreja F5" class="h-10">
+                </a>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-white hover:text-primary transition-colors duration-300">Início</a>
+                    <a href="#quem-somos" class="text-white hover:text-primary transition-colors duration-300">Quem Somos</a>
+                    <a href="#acoes-sociais" class="text-white hover:text-primary transition-colors duration-300">Ações Sociais</a>
+                    <a href="#participe" class="text-white hover:text-primary transition-colors duration-300">Participe</a>
+                    <a href="#contato" class="text-white hover:text-primary transition-colors duration-300">Contato</a>
+                </div>
+                
+                <button id="mobile-menu-button" class="md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-4 pb-4">
+                <a href="#inicio" class="block text-white hover:text-primary transition-colors duration-300">Início</a>
+                <a href="#quem-somos" class="block text-white hover:text-primary transition-colors duration-300">Quem Somos</a>
+                <a href="#acoes-sociais" class="block text-white hover:text-primary transition-colors duration-300">Ações Sociais</a>
+                <a href="#participe" class="block text-white hover:text-primary transition-colors duration-300">Participe</a>
+                <a href="#contato" class="block text-white hover:text-primary transition-colors duration-300">Contato</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero-bg min-h-screen flex items-center justify-center text-white pt-20">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 text-primary">IGREJA F5</h1>
+                <h2 class="text-2xl md:text-3xl mb-8 font-light">"ação, reação, doação."</h2>
+                <p class="text-xl mb-12 max-w-2xl mx-auto">Foco em vidas, todos são bem-vindos. Uma comunidade que transforma através do amor e serviço.</p>
+                <a href="#acoes-sociais" class="bg-primary text-secondary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-yellow-300 transition-colors duration-300 inline-block">
+                    Conheça Nossas Ações
+                </a>
+            </div>
+        </section>
+
+        <section id="quem-somos" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-4xl font-bold mb-8 text-secondary">Quem Somos</h2>
+                    <div class="text-lg leading-relaxed space-y-6">
+                        <p>
+                            A IGREJA F5 é uma comunidade cristã que nasceu com o propósito de fazer a diferença na sociedade através da ação social. 
+                            Acreditamos que a fé se manifesta através do amor prático e do serviço ao próximo.
+                        </p>
+                        <p>
+                            Nossa missão é acolher, transformar e impactar vidas, independente de origem, crença ou condição social. 
+                            Somos uma família que crê no poder do amor em ação e na transformação que acontece quando nos doamos pelos outros.
+                        </p>
+                        <p class="font-semibold text-primary">
+                            Todos são bem-vindos. Foco em vidas, transformação através do serviço.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="acoes-sociais" class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-12 text-center text-secondary">Nossas Ações Sociais</h2>
+                
+                <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+                    <div>
+                        <div class="acao-roupas-bg w-full rounded-lg shadow-lg"></div>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold mb-6 text-primary">Doação de Roupas</h3>
+                        <p class="text-lg mb-6">
+                            Através da nossa <strong>Campanha do Agasalho</strong>, arrecadamos e distribuímos roupas 
+                            para famílias em situação de vulnerabilidade social. Acreditamos que o cuidado básico 
+                            com vestuário é essencial para a dignidade humana.
+                        </p>
+                        <p class="text-lg">
+                            Durante os meses mais frios, intensificamos nossas ações para garantir que ninguém 
+                            passe frio. Sua doação pode aquecer corpos e corações.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="md:order-2">
+                        <div class="acao-cestas-bg w-full rounded-lg shadow-lg"></div>
+                    </div>
+                    <div class="md:order-1">
+                        <h3 class="text-3xl font-bold mb-6 text-primary">Entrega de Cestas Básicas</h3>
+                        <p class="text-lg mb-6">
+                            Realizamos a arrecadação e distribuição de <strong>cestas básicas</strong> para famílias 
+                            que enfrentam dificuldades para garantir o alimento diário. A fome não pode esperar, 
+                            e nossa resposta precisa ser imediata.
+                        </p>
+                        <p class="text-lg">
+                            Através de parcerias e doações da comunidade, conseguimos levar esperança e 
+                            sustento para centenas de famílias mensalmente.
+                        </s
+>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="participe" class="py-20 bg-primary">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold mb-8 text-secondary">Participe Dessa Transformação</h2>
+                <p class="text-xl mb-8 max-w-2xl mx-auto">
+                    Sua ajuda faz a diferença! Junte-se a nós nessa missão de transformar vidas através do amor em ação.
+                </p>
+                
+                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold mb-4 text-secondary">Seja Voluntário</h3>
+                        <p class="mb-6">
+                            Doe seu tempo e talento. Participe das nossas ações sociais e faça parte dessa 
+                            corrente do bem. Juntos somos mais fortes!
+                        </p>
+                        <p class="text-sm text-gray-600">
+                            Com o apoio e parceria dos nossos membros, conseguimos ampliar nosso impacto.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold mb-4 text-secondary">Faça uma Doação</h3>
+                        <p class="mb-6">
+                            Sua contribuição financeira ou em espécie (roupas, alimentos) ajuda a manter 
+                            nossas ações sociais e alcançar mais pessoas.
+                        </p>
+                        <p class="text-sm text-gray-600">
+                            Toda doação é importante e faz a diferença na vida de alguém.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="mt-12">
+                    <a href="#contato" class="bg-secondary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-800 transition-colors duration-300 inline-block">
+                        Entre em Contato
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contato" class="bg-secondary text-white py-16">
+            <div class="container mx-auto px-4">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-primary">Contato</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="mr-4 mt-1 text-primary">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">Endereço:</p>
+                                    <p>Rua Inês, 2 - Prata, Nova Iguaçu</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="mr-4 mt-1 text-primary">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">Instagram:</p>
+                                    <a href="https://instagram.com/igrejaf5" target="_blank" class="text-white hover:text-primary transition-colors duration-300">
+                                        @igrejaf5
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-primary">Localização</h3>
+                        <div class="bg-gray-800 rounded-lg overflow-hidden h-64 md:h-80">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.966023243916!2d-43.4357261!3d-22.7661582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x996773a453187b%3A0x7059c1186b49e396!2sR.%20In%C3%AAs%2C%202%20-%20Prata%2C%20Nova%20Igua%C3%A7u%20-%20RJ!5e0!3m2!1spt-BR!2sbr" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Localização da IGREJA F5 - Rua Inês, 2 - Prata, Nova Iguaçu">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                    <p>© 2025 IGREJA F5. Todos os direitos reservados.</p>
+                    <p class="text-primary mt-2">"ação, reação, doação."</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+    
+    <script>
+        // Mobile menu functionality
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when clicking on a link
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        // Este script já é coberto pelo `scroll-behavior: smooth;` no CSS,
+        // mas o mantemos para garantir compatibilidade com navegadores mais antigos.
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Navigation active state
+        const sections = document.querySelectorAll('main section[id]');
+        const navLinks = document.querySelectorAll('nav a[href^="#"]');
+        
+        window.addEventListener('scroll', function() {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100; // 100px de offset
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('text-primary');
+                link.classList.add('text-white');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.remove('text-white');
+                    link.classList.add('text-primary');
+                }
+            });
+            
+            // Caso especial para o 'Início'
+            const inicioLink = document.querySelector('nav a[href="#inicio"]');
+            if (current === 'inicio' || scrollY < 500) { // Ativa o "Início" no topo
+                navLinks.forEach(l => l.classList.add('text-white')); // Reseta todos
+                inicioLink.classList.remove('text-white');
+                inicioLink.classList.add('text-primary');
+            }
+        });
+    </script>
+</body>
+</html>
